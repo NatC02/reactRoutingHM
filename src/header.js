@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 class Header extends Component {
   active = {
     fontWeight: "bold",
-    color: "red"
+    color: "red",
   };
 
   header = {
     display: "flex",
     justifyContent: "space-evenly",
-    listStyle: "none"
+    listStyle: "none",
   };
   render() {
     return (
@@ -18,8 +18,11 @@ class Header extends Component {
         <NavLink exact to="/" activeStyle={this.active}>
           Home
         </NavLink>
-        <NavLink to="/posts" activeStyle={this.active}>
-          Posts
+        <NavLink to="/specsoneplus" activeStyle={this.active}>
+          Oneplus 7t Specs
+        </NavLink>
+        <NavLink to="/specssamsung" activeStyle={this.active}>
+          Samsung S20 Specs
         </NavLink>
       </div>
     );

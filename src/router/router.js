@@ -1,7 +1,8 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import App from "../components/App";
-import Posts from "../components/Posts";
+import SpecsOneplus from "../components/SpecsOneplus";
+import SpecsSamsung from "../components/SpecsSamsung";
 import Header from "../header";
 
 class ReactRouter extends React.Component {
@@ -10,7 +11,8 @@ class ReactRouter extends React.Component {
       <React.Fragment>
         <Header />
         <Route exact path="/" component={App} />
-        <Route  path="/posts" component={Posts} />
+        <Route path="/specsoneplus" component={SpecsOneplus} />
+        <Route path="/specssamsung" component={SpecsSamsung} />
       </React.Fragment>
     );
   }
